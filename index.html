@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="onspruce: e-commerce apps, consulting, and custom solutions. Home of Cart Insights for Shopify." />
+  <meta name="keywords" content="onspruce, Cart Insights, Shopify, e-commerce, analytics, privacy, compliance" />
+  <meta name="author" content="onspruce solutions" />
+  <title>Cart Insights – Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="brand" style="display: flex; align-items: center; gap: 0.5em;">
+        <img src="spruce_logo.png" alt="onspruce logo" style="height: 32px; width: auto; vertical-align: middle;" />
+        onspruce
+      </a>
+      <div class="nav-links">
+        <a href="product.html">Cart Insights</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>e-commerce insights and solutions</h1>
+      <p>onspruce provides apps, consulting, and custom solutions that help e-commerce teams build, scale, and understand their businesses.</p>
+      <a class="button" href="product.html">Explore Cart Insights</a>
+    </section>
+
+    <section class="features">
+      <h2>What We Do</h2>
+      <div class="feature-grid">
+        <article class="feature">
+          <h3>Apps</h3>
+          <p>Our current focus is <a href="product.html">Cart Insights</a>, a Shopify application that provides e-commerce professionals with daily intelligence and insights on customer cart activities.</p>
+        </article>
+        <article class="feature">
+          <h3>Consulting</h3>
+          <p>Build your e-commerce business with the right marketplace integrations, product and order feeds, intelligence, analytics, and reporting tools.</p>
+        </article>
+        <article class="feature">
+          <h3>Solutions</h3>
+          <p>We provide custom Shopify private app solutions as well as marketplace integration solutions with a Ruby on Rails platform focus. We build for scale, utility, and efficiency.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      <img src="spruce_logo.png" alt="onspruce logo" style="height: 18px; width: auto; vertical-align: middle; margin-right: 0.5em;" />
+      &copy; <span id="year"></span> onspruce solutions
+       | <a href="mailto:info@onspruce.com">info@onspruce.com</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

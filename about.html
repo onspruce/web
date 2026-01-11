@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About onspruce: e-commerce development group, creators of Cart Insights for Shopify." />
+  <meta name="keywords" content="onspruce, about, Cart Insights, Shopify, e-commerce, development" />
+  <meta name="author" content="onspruce solutions" />
+  <title>About – onspruce</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="brand" style="display: flex; align-items: center; gap: 0.5em;">
+        <img src="spruce_logo.png" alt="onspruce logo" style="height: 32px; width: auto; vertical-align: middle;" />
+        onspruce
+      </a>
+      <div class="nav-links">
+        <a href="cart-insights.html">Cart Insights</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero small">
+      <h1>about onspruce</h1>
+      <p>onspruce is a development group based in the greater Seattle area.</p>
+    </section>
+
+    <section class="content">
+      <h2>Who We Are</h2>
+      <p>
+        onspruce is a development group based in Seattle, Washington. We combine the skills,
+        insights, and experience of software developers and e-commerce business owners under one canopy.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> onspruce solutions | <a href="mailto:info@onspruce.com">info@onspruce.com</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
