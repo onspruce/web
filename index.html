@@ -7,6 +7,22 @@
   <meta name="keywords" content="onspruce, Cart Insights, Shopify, e-commerce, analytics, privacy, compliance" />
   <meta name="author" content="onspruce solutions" />
   <title>Cart Insights – Home</title>
+  <link rel="canonical" href="https://onspruce.com/" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://onspruce.com/" />
+  <meta property="og:title" content="onspruce - E-commerce Insights and Solutions" />
+  <meta property="og:description" content="onspruce provides apps, consulting, and custom solutions that help e-commerce teams build, scale, and understand their businesses." />
+  <meta property="og:image" content="https://onspruce.com/images/spruce_logo.png" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:url" content="https://onspruce.com/" />
+  <meta name="twitter:title" content="onspruce - E-commerce Insights and Solutions" />
+  <meta name="twitter:description" content="onspruce provides apps, consulting, and custom solutions that help e-commerce teams build, scale, and understand their businesses." />
+  <meta name="twitter:image" content="https://onspruce.com/images/spruce_logo.png" />
+  
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
@@ -18,10 +34,10 @@
         onspruce
       </a>
       <div class="nav-links">
-        <a href="cart-insights.html">Cart Insights</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="cart-insights-privacy-policy.html">Privacy Policy</a>
+        <a href="cart-insights/">Cart Insights</a>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
+        <a href="cart-insights-privacy-policy/">Privacy Policy</a>
       </div>
     </nav>
   </header>
@@ -30,7 +46,7 @@
     <section class="hero">
       <h1>e-commerce insights and solutions</h1>
       <p>onspruce provides apps, consulting, and custom solutions that help e-commerce teams build, scale, and understand their businesses.</p>
-      <a class="button" href="cart-insights.html">Explore Cart Insights</a>
+      <a class="button" href="cart-insights/">Explore Cart Insights</a>
     </section>
 
     <section class="features">
@@ -38,7 +54,7 @@
       <div class="feature-grid">
         <article class="feature">
           <h3>Apps</h3>
-          <p>Our current focus is <a href="cart-insights.html">Cart Insights</a>, a Shopify application that provides e-commerce professionals with daily intelligence and insights on customer cart activities.</p>
+          <p>Our current focus is <a href="cart-insights/">Cart Insights</a>, a Shopify application that provides e-commerce professionals with daily intelligence and insights on customer cart activities.</p>
         </article>
         <article class="feature">
           <h3>Consulting</h3>
@@ -62,6 +78,27 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "onspruce solutions",
+    "url": "https://onspruce.com",
+    "logo": "https://onspruce.com/images/spruce_logo.png",
+    "description": "E-commerce apps, consulting, and custom solutions. Home of Cart Insights for Shopify.",
+    "email": "info@onspruce.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Seattle",
+      "addressRegion": "WA",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://apps.shopify.com/cart-insights"
+    ]
+  }
   </script>
 </body>
 </html>

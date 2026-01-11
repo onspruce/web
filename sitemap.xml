@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://onspruce.github.io/</loc>
+    <loc>https://onspruce.com/</loc>
   </url>
   <url>
-    <loc>https://onspruce.github.io/index.html</loc>
+    <loc>https://onspruce.com/about/</loc>
   </url>
   <url>
-    <loc>https://onspruce.github.io/about.html</loc>
+    <loc>https://onspruce.com/contact/</loc>
   </url>
   <url>
-    <loc>https://onspruce.github.io/contact.html</loc>
+    <loc>https://onspruce.com/cart-insights/</loc>
   </url>
   <url>
-    <loc>https://onspruce.github.io/cart-insights.html</loc>
+    <loc>https://onspruce.com/cart-insights-privacy-policy/</loc>
   </url>
   <url>
-    <loc>https://onspruce.github.io/cart-insights-privacy-policy.html</loc>
-  </url>
-  <url>
-    <loc>https://onspruce.github.io/cart-insights-privacy-policy.html</loc>
-  </url>
-  <url>
-    <loc>https://onspruce.github.io/protected-customer-data.html</loc>
+    <loc>https://onspruce.com/protected-customer-data/</loc>
   </url>
 </urlset>
