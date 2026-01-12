@@ -199,21 +199,23 @@ a:hover {
 }
 .slideshow .slides {
   position: relative;
+  /* Fix the slideshow height so slides don't push content down
+     as they change. This keeps a stable frame for all slides. */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 .slideshow .slide {
-  position: relative;
+  position: absolute;
+  inset: 0;
   opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: opacity 600ms ease, height 600ms ease;
+  transition: opacity 400ms ease;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0;
 }
 .slideshow .slide.active {
   opacity: 1;
-  height: auto;
 }
 .slideshow img {
   max-width: 100%;
