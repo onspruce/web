@@ -86,6 +86,77 @@ a:hover {
   text-decoration: none;
 }
 
+.button-secondary {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.14);
+}
+
+.button-secondary:hover {
+  background: #f8fafc;
+}
+
+.product-spotlight {
+  margin: 0.75rem 0 2rem;
+}
+
+.product-spotlight-card {
+  padding: 1.5rem 1.5rem 1.25rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f7fffc 100%);
+  border: 1px solid rgba(4, 190, 166, 0.18);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.product-spotlight-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-spotlight-logo {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+}
+
+.product-spotlight-kicker {
+  margin: 0 0 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0f766e;
+}
+
+.product-spotlight-card h2 {
+  margin: 0;
+  font-size: 1.9rem;
+}
+
+.product-spotlight-copy {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  color: #334155;
+}
+
+.product-spotlight-list {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+  color: #1f2937;
+}
+
+.product-spotlight-list li + li {
+  margin-top: 0.45rem;
+}
+
+.product-spotlight-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .features {
   margin-top: 1.5rem;
 }
@@ -177,6 +248,14 @@ a:hover {
 
   .hero h1 {
     font-size: 1.8rem;
+  }
+
+  .product-spotlight-header {
+    align-items: flex-start;
+  }
+
+  .product-spotlight-card h2 {
+    font-size: 1.55rem;
   }
 }
 
