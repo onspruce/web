@@ -49,7 +49,7 @@
         This page explains how Cart Insights handles protected customer data and the
         controls we use to keep it secure and compliant.
       </p>
-      <p><em>Revised January 12, 2023</em></p>
+      <p><em>Revised April 22, 2026</em></p>
     </section>
 
     <section class="content policy">
@@ -58,7 +58,10 @@
         onspruce solutions ("we") and Cart Insights ("the App") are dedicated to
         customer and user privacy and data protection. We only collect and use
         data that is needed to provide the App's functionality. We do not share
-        or sell data to any third party. For additional details, see the
+        or sell customer data to any third party for advertising or marketing
+        purposes. We work with a limited set of infrastructure sub-processors
+        required to operate the App, as described in the Sub-Processors section
+        below. For additional details, see the
         <a href="../cart-insights-privacy-policy/">Cart Insights Privacy Policy</a>.
       </p>
 
@@ -97,6 +100,33 @@
           are in a customer's cart so shop admins can provide customer service
           and better understand cart activity.
         </li>
+        <li>
+          <strong>Shopify web pixel event data</strong> – used to measure store
+          browsing, product discovery, cart activity, and checkout progression
+          so shop admins can better understand customer behavior and improve the
+          shop experience.
+          <ul>
+            <li><strong>Standard events collected</strong>: cart_viewed, checkout_address_info_submitted, checkout_completed, checkout_contact_info_submitted, checkout_shipping_info_submitted, checkout_started, collection_viewed, page_viewed, payment_info_submitted, product_added_to_cart, product_removed_from_cart, product_viewed, and search_submitted.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Browser and storefront context data</strong> – used to
+          associate cart activity with a storefront session, understand how a
+          visitor arrived at the store, support customer service, and improve
+          reporting accuracy.
+          <ul>
+            <li><strong>Data collected</strong>: cart token, customer ID when available in Shopify storefront context, shop domain, referrer URL, landing page URL, IP address, and browser user agent.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Browser cookie and session storage</strong> – the App stores a
+          persistent first-party cookie (<code>cartinsights_data</code>) on the
+          storefront visitor's browser to associate cart activity across page
+          navigation. The cookie expires after 60 days and contains the cart
+          token, customer ID (when present), shop domain, referrer URL, landing
+          page URL, and IP address. Session storage entries are also used to
+          hold the same values for the duration of the browser session.
+        </li>
       </ul>
 
       <h2>Personal Data Processing Practices</h2>
@@ -110,14 +140,20 @@
         <li>
           <strong>We respect customer consent decisions.</strong> Customer
           consent is a critical mechanism for customers to participate in their
-          data processing. The App processes GDPR data request and GDPR erasure
-          requests.
+          data processing. The App implements Shopify's mandatory GDPR webhooks
+          (customers/redact, shop/redact, and customers/data_request). Web pixel
+          event collection operates within Shopify's web pixel framework, which
+          enforces the merchant storefront's customer consent preferences via
+          the Shopify Customer Privacy API before delivering events to the App.
         </li>
         <li>
           <strong>We honor opt-out decisions.</strong> We respect customer
           decisions to opt out of any data sharing, such as a "data sale" or
           similar concept, and we comply with applicable laws and regulations
-          around sharing of personal data.
+          around sharing of personal data, including the California Consumer
+          Privacy Act (CCPA/CPRA). We do not sell personal information. California
+          residents may submit requests to know, delete, or opt out by contacting
+          us at <a href="mailto:info@onspruce.com">info@onspruce.com</a>.
         </li>
         <li>
           <strong>No automated decision-making.</strong> The App does not use
@@ -132,15 +168,37 @@
           an important tool for safe data privacy practices.
         </li>
         <li>
-          <strong>Defined retention periods.</strong> We apply specific
-          retention periods to make sure that personal data is not kept longer
-          than necessary for the stated processing purposes.
+          <strong>Defined retention periods.</strong> Cart activity and
+          associated personal data is automatically deleted from our database
+          after 62 days of inactivity. Merchant-generated CSV export reports
+          are automatically deleted from cloud storage after 92 days. Browser
+          cookies set by the App expire after 60 days.
         </li>
         <li>
           <strong>Encryption at rest and in transit.</strong> Data is encrypted
           when stored and when transmitted across networks. Our database data is
           encrypted, our backups are encrypted, and our database connections
           require encryption.
+        </li>
+      </ul>
+
+      <h2>Sub-Processors</h2>
+      <p>
+        The App relies on the following infrastructure sub-processors to deliver
+        its functionality. No protected customer data is shared with any other
+        third party.
+      </p>
+      <ul>
+        <li>
+          <strong>Amazon Web Services (AWS)</strong> – used for application
+          hosting, encrypted data storage, and merchant-generated CSV export
+          file hosting. Data is stored in the United States.
+        </li>
+        <li>
+          <strong>ipify.org</strong> – used to resolve the public IP address of
+          a storefront visitor at the time their cart activity is recorded. Only
+          the visitor's public IP address is transmitted to this service; no
+          other personal data is shared.
         </li>
       </ul>
 
