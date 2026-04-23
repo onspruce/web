@@ -1,2 +1,2 @@
 # web
-onspruce solutions website
+onspruce website
