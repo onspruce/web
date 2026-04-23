@@ -26,7 +26,26 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0 0 1rem;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
+}
+
+/* Improve list/bullet spacing and rhythm */
+ul, ol {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  line-height: 1.4;
+  list-style-position: outside;
+}
+
+ul li, ol li {
+  margin: 0 0 0.45rem;
+}
+
+/* Nested lists: slightly tighter indent and small top spacing */
+ul ul, ol ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
 }
 
 a {
@@ -95,7 +114,7 @@ a:hover {
   border-radius: 999px;
   background: #04BEA6;
   color: #f9fafb;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .button:hover {
@@ -107,6 +126,7 @@ a:hover {
   background: #ffffff;
   color: #0f172a;
   border: 1px solid rgba(15, 23, 42, 0.14);
+  font-weight: 700;
 }
 
 .button-secondary:hover {
@@ -121,7 +141,7 @@ a:hover {
   padding: 1.5rem 1.5rem 1.25rem;
   border-radius: 1rem;
   background: linear-gradient(135deg, #ffffff 0%, #f7fffc 100%);
-  border: 1px solid rgba(4, 190, 166, 0.18);
+  border: 1px solid rgba(15, 23, 42, 0.06);
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
