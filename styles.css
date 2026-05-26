@@ -108,8 +108,15 @@ a:hover {
   color: #4b5563;
 }
 
+/* Reduce space between hero subtitle and screenshots on the app page */
+.hero.small p { margin-bottom: 0.6rem; }
+.hero.small + .screenshots { margin-top: 0.25rem; }
+
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
   background: #04BEA6;
@@ -150,6 +157,14 @@ a:hover {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+/* Home product card BFS/App Store badge */
+.product-spotlight-header .bfs-badge { margin-left: auto; line-height: 0; }
+
+@media (max-width: 600px) {
+  .product-spotlight-header { flex-wrap: wrap; }
+  .product-spotlight-header .bfs-badge { margin-left: 0; width: 100%; display: flex; justify-content: flex-end; margin-top: 0.5rem; }
 }
 
 .product-spotlight-logo {
@@ -257,6 +272,112 @@ a:hover {
 
 .policy p {
   margin-top: 0.75rem;
+}
+
+/* Partners section */
+.partners {
+  margin-top: 2.5rem;
+}
+
+.partners-intro {
+  color: #4b5563;
+  margin-bottom: 1.25rem;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.partner-card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Simple partner block (used on partners/index.html) */
+.partner-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.partner-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Tighten spacing between partner description and CTA */
+.content .partner-simple .partner-desc {
+  margin-bottom: 0.5rem;
+}
+
+.content .partner-simple > p:last-of-type {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Align description and CTA with the logo/title — remove extra left padding inside .content */
+.content .partner-simple .partner-desc,
+.content .partner-simple p {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.content .partner-simple .partner-cta {
+  margin-left: 0;
+  padding: 0.75rem 1.5rem; /* symmetric padding so text centers inside the pill */
+}
+
+.partner-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.partner-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 0.75rem;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.partner-kicker {
+  margin: 0 0 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0f766e;
+}
+
+.partner-name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.partner-desc {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #374151;
+  flex: 1;
+}
+
+.partner-cta {
+  align-self: flex-start;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.25rem;
 }
 
 .footer {
